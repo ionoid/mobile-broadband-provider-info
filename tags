@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3d01d993/
+$(SP_XML_DB)	Makefile.am	/^dist_pkgdata_DATA = $(SP_XML_DB) serviceproviders.2.dtd$/;"	D	directory:pkgdata
+CLEANFILES	Makefile.am	/^CLEANFILES = apns-conf.xml$/;"	m
+EXTRA_DIST	Makefile.am	/^EXTRA_DIST = mobile-broadband-provider-info.pc.in \\$/;"	m
+SP_XML_DB	Makefile.am	/^SP_XML_DB = serviceproviders.xml$/;"	m
+apn	serviceproviders.2.dtd	/^<!ELEMENT apn (plan*,$/;"	e
+apns-conf.xml	Makefile.am	/^apns-conf.xml: $(top_srcdir)\/apns-conf.xsl $(top_srcdir)\/$(SP_XML_DB)$/;"	t
+apns-conf.xml	Makefile.am	/^pkgdata_DATA = apns-conf.xml$/;"	D	directory:pkgdata
+authentication	serviceproviders.2.dtd	/^<!ELEMENT authentication EMPTY>$/;"	e
+balance-check	serviceproviders.2.dtd	/^<!ELEMENT balance-check (ussd*,$/;"	e
+balance-top-up	serviceproviders.2.dtd	/^<!ELEMENT balance-top-up (ussd*,$/;"	e
+cdma	serviceproviders.2.dtd	/^<!ELEMENT cdma (name*,$/;"	e
+check-local	Makefile.am	/^check-local:$/;"	t
+code	serviceproviders.2.dtd	/^<!ATTLIST country code CDATA #REQUIRED>$/;"	a
+country	serviceproviders.2.dtd	/^<!ELEMENT country (provider*)>$/;"	e
+dist_pkgdata_DATA	Makefile.am	/^dist_pkgdata_DATA = $(SP_XML_DB) serviceproviders.2.dtd$/;"	m
+dns	serviceproviders.2.dtd	/^<!ELEMENT dns (#PCDATA)>$/;"	e
+dtmf	serviceproviders.2.dtd	/^<!ELEMENT dtmf (#PCDATA)>$/;"	e
+format	serviceproviders.2.dtd	/^<!ATTLIST serviceproviders format CDATA #REQUIRED>$/;"	a
+gateway	serviceproviders.2.dtd	/^<!ELEMENT gateway (#PCDATA)>$/;"	e
+gsm	serviceproviders.2.dtd	/^<!ELEMENT gsm (network-id*, msisdn-query*, voicemail*, balance-check*, balance-top-up*, apn*)>$/;"	e
+mcc	serviceproviders.2.dtd	/^<!ATTLIST network-id mcc CDATA #REQUIRED>$/;"	a
+method	serviceproviders.2.dtd	/^<!ATTLIST authentication method (chap|pap) #REQUIRED>$/;"	a
+mmsc	serviceproviders.2.dtd	/^<!ELEMENT mmsc (#PCDATA)>$/;"	e
+mmsproxy	serviceproviders.2.dtd	/^<!ELEMENT mmsproxy (#PCDATA)>$/;"	e
+mnc	serviceproviders.2.dtd	/^<!ATTLIST network-id mnc CDATA #REQUIRED>$/;"	a
+mobile-broadband-provider-info	configure.ac	/^AC_INIT(mobile-broadband-provider-info,$/;"	p
+mobile-broadband-provider-info.pc	Makefile.am	/^pkgconfig_DATA = mobile-broadband-provider-info.pc$/;"	D	directory:pkgconfig
+msisdn-query	serviceproviders.2.dtd	/^<!ELEMENT msisdn-query (ussd*, sms*)>$/;"	e
+name	serviceproviders.2.dtd	/^<!ELEMENT name (#PCDATA)>$/;"	e
+network-id	serviceproviders.2.dtd	/^<!ELEMENT network-id EMPTY>$/;"	e
+password	serviceproviders.2.dtd	/^<!ELEMENT password (#PCDATA)>$/;"	e
+pkgconfig	Makefile.am	/^pkgconfigdir = $(datadir)\/pkgconfig$/;"	d
+pkgconfig_DATA	Makefile.am	/^pkgconfig_DATA = mobile-broadband-provider-info.pc$/;"	m
+pkgconfigdir	Makefile.am	/^pkgconfigdir = $(datadir)\/pkgconfig$/;"	m
+pkgdata_DATA	Makefile.am	/^pkgdata_DATA = apns-conf.xml$/;"	m
+plan	serviceproviders.2.dtd	/^<!ELEMENT plan EMPTY>$/;"	e
+primary	serviceproviders.2.dtd	/^<!ATTLIST provider primary (true|false) #IMPLIED>$/;"	a
+provider	serviceproviders.2.dtd	/^<!ELEMENT provider (name+, gsm?, cdma?)>$/;"	e
+providers	ionoidserviceproviders.json	/^    "providers": []$/;"	a	object:ww
+replacement	serviceproviders.2.dtd	/^<!ATTLIST ussd replacement CDATA #IMPLIED>$/;"	a
+serviceproviders	serviceproviders.2.dtd	/^<!ELEMENT serviceproviders (country*)>$/;"	e
+serviceproviders.2.dtd	Makefile.am	/^dist_pkgdata_DATA = $(SP_XML_DB) serviceproviders.2.dtd$/;"	D	directory:pkgdata
+sid	serviceproviders.2.dtd	/^<!ELEMENT sid EMPTY>$/;"	e
+sms	serviceproviders.2.dtd	/^<!ELEMENT sms (#PCDATA)>$/;"	e
+text	serviceproviders.2.dtd	/^<!ATTLIST sms text CDATA #REQUIRED>$/;"	a
+type	serviceproviders.2.dtd	/^<!ATTLIST plan type (prepaid|postpaid) #REQUIRED>$/;"	a
+type	serviceproviders.2.dtd	/^<!ATTLIST usage type (internet|mms|wap|ia) #REQUIRED>$/;"	a
+usage	serviceproviders.2.dtd	/^<!ELEMENT usage EMPTY>$/;"	e
+username	serviceproviders.2.dtd	/^<!ELEMENT username (#PCDATA)>$/;"	e
+ussd	serviceproviders.2.dtd	/^<!ELEMENT ussd (#PCDATA)>$/;"	e
+ussd-response	serviceproviders.2.dtd	/^<!ELEMENT ussd-response (#PCDATA)>$/;"	e
+value	serviceproviders.2.dtd	/^<!ATTLIST apn value CDATA #REQUIRED>$/;"	a
+value	serviceproviders.2.dtd	/^<!ATTLIST sid value CDATA #REQUIRED>$/;"	a
+voicemail	serviceproviders.2.dtd	/^<!ELEMENT voicemail (#PCDATA)>$/;"	e
+ww	ionoidserviceproviders.json	/^  "ww": {$/;"	o
+xml:lang	serviceproviders.2.dtd	/^<!ATTLIST name xml:lang CDATA #IMPLIED>$/;"	a
