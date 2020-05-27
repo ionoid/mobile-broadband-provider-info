@@ -6,11 +6,13 @@
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/3d01d993/
 $(SP_XML_DB)	Makefile.am	/^dist_pkgdata_DATA = $(SP_XML_DB) serviceproviders.2.dtd$/;"	D	directory:pkgdata
+0	ionoidserviceproviders.json	/^          {$/;"	o	array:ww.providers.0.apn-list
 0	ionoidserviceproviders.json	/^      {$/;"	o	array:ww.providers
 CLEANFILES	Makefile.am	/^CLEANFILES = apns-conf.xml$/;"	m
 EXTRA_DIST	Makefile.am	/^EXTRA_DIST = mobile-broadband-provider-info.pc.in \\$/;"	m
 SP_XML_DB	Makefile.am	/^SP_XML_DB = serviceproviders.xml$/;"	m
 apn	serviceproviders.2.dtd	/^<!ELEMENT apn (plan*,$/;"	e
+apn-list	ionoidserviceproviders.json	/^        "apn-list": [$/;"	a	object:ww.providers.0
 apns-conf.xml	Makefile.am	/^apns-conf.xml: $(top_srcdir)\/apns-conf.xsl $(top_srcdir)\/$(SP_XML_DB)$/;"	t
 apns-conf.xml	Makefile.am	/^pkgdata_DATA = apns-conf.xml$/;"	D	directory:pkgdata
 authentication	serviceproviders.2.dtd	/^<!ELEMENT authentication EMPTY>$/;"	e
@@ -21,7 +23,7 @@ check-local	Makefile.am	/^check-local:$/;"	t
 code	serviceproviders.2.dtd	/^<!ATTLIST country code CDATA #REQUIRED>$/;"	a
 country	serviceproviders.2.dtd	/^<!ELEMENT country (provider*)>$/;"	e
 dist_pkgdata_DATA	Makefile.am	/^dist_pkgdata_DATA = $(SP_XML_DB) serviceproviders.2.dtd$/;"	m
-dns	ionoidserviceproviders.json	/^        "dns": [],$/;"	a	object:ww.providers.0
+dns	ionoidserviceproviders.json	/^            "dns": [],$/;"	a	object:ww.providers.0.apn-list.0
 dns	serviceproviders.2.dtd	/^<!ELEMENT dns (#PCDATA)>$/;"	e
 dtmf	serviceproviders.2.dtd	/^<!ELEMENT dtmf (#PCDATA)>$/;"	e
 format	serviceproviders.2.dtd	/^<!ATTLIST serviceproviders format CDATA #REQUIRED>$/;"	a
@@ -35,16 +37,17 @@ mnc	serviceproviders.2.dtd	/^<!ATTLIST network-id mnc CDATA #REQUIRED>$/;"	a
 mobile-broadband-provider-info	configure.ac	/^AC_INIT(mobile-broadband-provider-info,$/;"	p
 mobile-broadband-provider-info.pc	Makefile.am	/^pkgconfig_DATA = mobile-broadband-provider-info.pc$/;"	D	directory:pkgconfig
 msisdn-query	serviceproviders.2.dtd	/^<!ELEMENT msisdn-query (ussd*, sms*)>$/;"	e
+name	ionoidserviceproviders.json	/^            "name": "WhereverSIM M2M Cards",$/;"	s	object:ww.providers.0.apn-list.0
 name	ionoidserviceproviders.json	/^        "name": "WhereverSIM M2M Cards",$/;"	s	object:ww.providers.0
 name	serviceproviders.2.dtd	/^<!ELEMENT name (#PCDATA)>$/;"	e
 network-id	serviceproviders.2.dtd	/^<!ELEMENT network-id EMPTY>$/;"	e
-password	ionoidserviceproviders.json	/^        "password": ""$/;"	s	object:ww.providers.0
+password	ionoidserviceproviders.json	/^            "password": ""$/;"	s	object:ww.providers.0.apn-list.0
 password	serviceproviders.2.dtd	/^<!ELEMENT password (#PCDATA)>$/;"	e
 pkgconfig	Makefile.am	/^pkgconfigdir = $(datadir)\/pkgconfig$/;"	d
 pkgconfig_DATA	Makefile.am	/^pkgconfig_DATA = mobile-broadband-provider-info.pc$/;"	m
 pkgconfigdir	Makefile.am	/^pkgconfigdir = $(datadir)\/pkgconfig$/;"	m
 pkgdata_DATA	Makefile.am	/^pkgdata_DATA = apns-conf.xml$/;"	m
-plan	ionoidserviceproviders.json	/^        "plan": "prepaid",$/;"	s	object:ww.providers.0
+plan	ionoidserviceproviders.json	/^            "plan": "prepaid",$/;"	s	object:ww.providers.0.apn-list.0
 plan	serviceproviders.2.dtd	/^<!ELEMENT plan EMPTY>$/;"	e
 primary	serviceproviders.2.dtd	/^<!ATTLIST provider primary (true|false) #IMPLIED>$/;"	a
 provider	serviceproviders.2.dtd	/^<!ELEMENT provider (name+, gsm?, cdma?)>$/;"	e
@@ -57,13 +60,13 @@ sms	serviceproviders.2.dtd	/^<!ELEMENT sms (#PCDATA)>$/;"	e
 text	serviceproviders.2.dtd	/^<!ATTLIST sms text CDATA #REQUIRED>$/;"	a
 type	serviceproviders.2.dtd	/^<!ATTLIST plan type (prepaid|postpaid) #REQUIRED>$/;"	a
 type	serviceproviders.2.dtd	/^<!ATTLIST usage type (internet|mms|wap|ia) #REQUIRED>$/;"	a
-usage	ionoidserviceproviders.json	/^        "usage": "internet",$/;"	s	object:ww.providers.0
+usage	ionoidserviceproviders.json	/^            "usage": "internet",$/;"	s	object:ww.providers.0.apn-list.0
 usage	serviceproviders.2.dtd	/^<!ELEMENT usage EMPTY>$/;"	e
-username	ionoidserviceproviders.json	/^        "username": "",$/;"	s	object:ww.providers.0
+username	ionoidserviceproviders.json	/^            "username": "",$/;"	s	object:ww.providers.0.apn-list.0
 username	serviceproviders.2.dtd	/^<!ELEMENT username (#PCDATA)>$/;"	e
 ussd	serviceproviders.2.dtd	/^<!ELEMENT ussd (#PCDATA)>$/;"	e
 ussd-response	serviceproviders.2.dtd	/^<!ELEMENT ussd-response (#PCDATA)>$/;"	e
-value	ionoidserviceproviders.json	/^        "value": "wm",$/;"	s	object:ww.providers.0
+value	ionoidserviceproviders.json	/^            "value": "wm",$/;"	s	object:ww.providers.0.apn-list.0
 value	serviceproviders.2.dtd	/^<!ATTLIST apn value CDATA #REQUIRED>$/;"	a
 value	serviceproviders.2.dtd	/^<!ATTLIST sid value CDATA #REQUIRED>$/;"	a
 voicemail	serviceproviders.2.dtd	/^<!ELEMENT voicemail (#PCDATA)>$/;"	e
