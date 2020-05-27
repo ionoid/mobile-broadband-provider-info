@@ -1,5 +1,15 @@
 {
   "ww": {
-    "providers": []
+    "providers": [
+      {
+        "name": "WhereverSIM M2M Cards",
+        "value": "wm",
+        "plan": "prepaid",
+        "usage": "internet",
+        "dns": [],
+        "username": "",
+        "password": ""
+      }
+    ]
   }
 }
