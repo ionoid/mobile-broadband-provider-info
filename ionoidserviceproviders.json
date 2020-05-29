@@ -2,12 +2,12 @@
   "ww": {
     "providers": [
       {
-        "name": "WhereverSIM M2M Cards",
+        "name": "wherever SIM M2M Cards",
         "apn-list": [
           {
-            "name": "WhereverSIM M2M Cards",
+            "name": "wherever SIM M2M Cards",
             "value": "wm",
-            "plan": "prepaid",
+            "plan": "postpaid",
             "usage": "internet",
             "dns": [],
             "username": "",

@@ -37,8 +37,8 @@ mnc	serviceproviders.2.dtd	/^<!ATTLIST network-id mnc CDATA #REQUIRED>$/;"	a
 mobile-broadband-provider-info	configure.ac	/^AC_INIT(mobile-broadband-provider-info,$/;"	p
 mobile-broadband-provider-info.pc	Makefile.am	/^pkgconfig_DATA = mobile-broadband-provider-info.pc$/;"	D	directory:pkgconfig
 msisdn-query	serviceproviders.2.dtd	/^<!ELEMENT msisdn-query (ussd*, sms*)>$/;"	e
-name	ionoidserviceproviders.json	/^            "name": "WhereverSIM M2M Cards",$/;"	s	object:ww.providers.0.apn-list.0
-name	ionoidserviceproviders.json	/^        "name": "WhereverSIM M2M Cards",$/;"	s	object:ww.providers.0
+name	ionoidserviceproviders.json	/^            "name": "wherever SIM M2M Cards",$/;"	s	object:ww.providers.0.apn-list.0
+name	ionoidserviceproviders.json	/^        "name": "wherever SIM M2M Cards",$/;"	s	object:ww.providers.0
 name	serviceproviders.2.dtd	/^<!ELEMENT name (#PCDATA)>$/;"	e
 network-id	serviceproviders.2.dtd	/^<!ELEMENT network-id EMPTY>$/;"	e
 password	ionoidserviceproviders.json	/^            "password": ""$/;"	s	object:ww.providers.0.apn-list.0
@@ -47,7 +47,7 @@ pkgconfig	Makefile.am	/^pkgconfigdir = $(datadir)\/pkgconfig$/;"	d
 pkgconfig_DATA	Makefile.am	/^pkgconfig_DATA = mobile-broadband-provider-info.pc$/;"	m
 pkgconfigdir	Makefile.am	/^pkgconfigdir = $(datadir)\/pkgconfig$/;"	m
 pkgdata_DATA	Makefile.am	/^pkgdata_DATA = apns-conf.xml$/;"	m
-plan	ionoidserviceproviders.json	/^            "plan": "prepaid",$/;"	s	object:ww.providers.0.apn-list.0
+plan	ionoidserviceproviders.json	/^            "plan": "postpaid",$/;"	s	object:ww.providers.0.apn-list.0
 plan	serviceproviders.2.dtd	/^<!ELEMENT plan EMPTY>$/;"	e
 primary	serviceproviders.2.dtd	/^<!ATTLIST provider primary (true|false) #IMPLIED>$/;"	a
 provider	serviceproviders.2.dtd	/^<!ELEMENT provider (name+, gsm?, cdma?)>$/;"	e
